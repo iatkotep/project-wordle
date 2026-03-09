@@ -20,7 +20,7 @@ const Keyboard = () => {
             >
               <button
                 className="keyboard-key"
-                onClick={handleKeyClick}
+                onClick={handleKeyClick(letter)}
                 value={letter}
               >
                 {letter}

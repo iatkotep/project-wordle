@@ -151,10 +151,14 @@ h1 {
   font-size: 1.25rem;
 }
 
+.attempt-char,
+.guess-input-wrapper input {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 .guess-input-wrapper input {
   display: block;
   width: 100%;
-  font-size: 2rem;
   border: 2px solid var(--color-gray-300);
   border-radius: 4px;
   padding: 8px 16px;
@@ -219,12 +223,32 @@ h1 {
   height: 30px;
   width: 30px;
   text-align: center;
+  text-transform: uppercase;
 }
 .keyboard-cell--active {
   border-color: #666;
 }
 
-
+.attempt-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+.attempt {
+  display: flex;
+  gap: 10px;
+}
+.attempt-char {
+  background-color: linen;
+  display: flex;
+  height: 80px;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+}
 
 /*
   Modal styles

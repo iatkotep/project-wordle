@@ -1,17 +1,10 @@
 import React, { useEffect, useRef } from "react";
 
-import { sample } from "../../utils";
-import { WORDS } from "../../data";
 import { useGameContext } from "../GameContext/GameContext";
 
-// Pick a random word on every pageload.
-const answer = sample(WORDS);
-// To make debugging easier, we'll log the solution in the console.
-console.info({ answer });
-
 function Game() {
-  const { guess, handleGuessChange } = useGameContext();
-  const refGuess = useRef(null);
+  const { guess, handleGuessChange, attempts } = useGameContext();
+  const refGuess = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     refGuess.current?.focus();
@@ -26,6 +19,7 @@ function Game() {
         value={guess}
         onChange={handleGuessChange}
         ref={refGuess}
+        disabled={attempts.length >= 5}
       />
     </div>
   );
