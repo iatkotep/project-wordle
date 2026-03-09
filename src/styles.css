@@ -160,6 +160,9 @@ h1 {
   padding: 8px 16px;
   outline-offset: 4px;
 }
+.guess-input-wrapper input:focus {
+  outline: none;
+}
 
 .banner {
   position: fixed;
@@ -195,6 +198,33 @@ h1 {
   padding: 0;
   border: 0;
 }
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.keyboard-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  justify-content: center;
+}
+.keyboard-cell {
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  background-color: lightgray;
+}
+.keyboard-key {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+.keyboard-cell--active {
+  border-color: #666;
+}
+
+
 
 /*
   Modal styles
