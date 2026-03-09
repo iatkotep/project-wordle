@@ -50,3 +50,41 @@ export const WORDS = [
   'FLAKE',
   'SOUND',
 ];
+
+export const KeyStatus = {
+  NONE: 0,
+  NO: 1,
+  KINDA: 2,
+  YES: 3
+}
+
+export const keys = {
+  'q': {row: 0, status: KeyStatus.NONE, isActive: false},
+  'w': {row: 0, status: KeyStatus.NONE, isActive: false},
+  'e': {row: 0, status: KeyStatus.NONE, isActive: false},
+  'r': {row: 0, status: KeyStatus.NONE, isActive: false},
+  't': {row: 0, status: KeyStatus.NONE, isActive: false},
+  'y': {row: 0, status: KeyStatus.NONE, isActive: false},
+  'u': {row: 0, status: KeyStatus.NONE, isActive: false},
+  'i': {row: 0, status: KeyStatus.NONE, isActive: false},
+  'o': {row: 0, status: KeyStatus.NONE, isActive: false},
+  'p': {row: 0, status: KeyStatus.NONE, isActive: false},
+
+  'a': {row: 1, status: KeyStatus.NONE, isActive: false},
+  's': {row: 1, status: KeyStatus.NONE, isActive: false},
+  'd': {row: 1, status: KeyStatus.NONE, isActive: false},
+  'f': {row: 1, status: KeyStatus.NONE, isActive: false},
+  'g': {row: 1, status: KeyStatus.NONE, isActive: false},
+  'h': {row: 1, status: KeyStatus.NONE, isActive: false},
+  'j': {row: 1, status: KeyStatus.NONE, isActive: false},
+  'k': {row: 1, status: KeyStatus.NONE, isActive: false},
+  'l': {row: 1, status: KeyStatus.NONE, isActive: false},
+
+  'z': {row: 2, status: KeyStatus.NONE, isActive: false},
+  'x': {row: 2, status: KeyStatus.NONE, isActive: false},
+  'c': {row: 2, status: KeyStatus.NONE, isActive: false},
+  'v': {row: 2, status: KeyStatus.NONE, isActive: false},
+  'b': {row: 2, status: KeyStatus.NONE, isActive: false},
+  'n': {row: 2, status: KeyStatus.NONE, isActive: false},
+  'm': {row: 2, status: KeyStatus.NONE, isActive: false},
+}
