@@ -1,5 +1,7 @@
-import Game from '../Game';
-import Header from '../Header';
+import Game from "../Game";
+import Header from "../Header";
+import Keyboard from "../Keyboard/Keyboard";
+import { GameProvider } from "../GameContext/GameContext";
 
 function App() {
   return (
@@ -7,7 +9,10 @@ function App() {
       <Header />
 
       <div className="game-wrapper">
-        <Game />
+        <GameProvider>
+          <Game />
+          <Keyboard />
+        </GameProvider>
       </div>
     </div>
   );
